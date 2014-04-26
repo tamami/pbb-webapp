@@ -1,0 +1,68 @@
+<?page title="Informasi WP PBB-P2" contentType="text/html;charset=UTF-8"?>
+<zk  >
+<window title="Informasi WP PBB-P2" border="normal" hflex="1"	
+		apply="org.zkoss.bind.BindComposer"
+		viewModel="@id('infoWpPbb_vm') @init('lab.aikibo.viewmodel.InfoWpPbb')"	>
+<vbox align="right">
+<grid>
+	<columns>
+		<column align="right" hflex="min"/>
+		<column label=""/>
+	</columns>
+	<rows>
+		<row>	
+			<label value="NOP" />
+			<textbox name="nop" hflex="1" value="@save(infoWpPbb_vm.nop, before='proses')" 
+					tooltiptext="isikan NOP tanpa tanda baca apapun"/>
+		</row>
+		<row>
+			<label value="TAHUN PAJAK" />
+			<textbox name="thn_pajak" hflex="1" value="@save(infoWpPbb_vm.thn, before='proses')"/>
+		</row>
+	</rows>
+</grid>
+<button id="btnProses" label="Proses" onClick="@command('proses')"/>
+<separator />
+<grid>
+	<columns>
+		<column align="right" hflex="min" />
+		<column label="" />
+	</columns>
+	<rows>
+		<row>
+			<label value="NOP" />
+			<label value="@load(infoWpPbb_vm.nopFormatted, after='proses')" />
+		</row>
+		<row>
+			<label value="Nama WP" />
+			<label value="@load(infoWpPbb_vm.namaWp, after='proses')" />
+		</row>
+		<row>
+			<label value="Alamat WP" />
+			<label value="@load(infoWpPbb_vm.alamatWp, after='proses')" />
+		</row>
+		<row>
+			<label value="Luas Bumi" />
+			<label value="@load(infoWpPbb_vm.luasBumiFormatted, after='proses')"/>
+		</row>
+		<row>
+			<label value="Luas Bangunan" />
+			<label value="@load(infoWpPbb_vm.luasBngFormatted, after='proses')" />
+		</row>
+		<row>
+			<label value="NJOP Bumi" />
+			<label value="@load(infoWpPbb_vm.njopBumiPerMeterFormatted, after='proses')" />
+		</row>
+		<row>
+			<label value="NJOP Bangunan" />
+			<label value="@load(infoWpPbb_vm.njopBngPerMeterFormatted, after='proses')" />
+		</row>
+		<row>
+			<label value="Status Pembayaran PBB" />
+			<label value="@load(infoWpPbb_vm.statusBayar, after='proses')" />
+		</row>
+	</rows>
+</grid>
+</vbox>
+</window>
+</zk>

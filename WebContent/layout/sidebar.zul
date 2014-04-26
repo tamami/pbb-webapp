@@ -1,0 +1,8 @@
+<zk>
+  <vbox vflex="1" hflex="1" align="top" pack="center"
+          apply="org.zkoss.bind.BindComposer" 
+          viewModel="@id('menu_vm') @init('lab.aikibo.viewmodel.MenuModel')">
+      <!-- <button id="btn_ubah" label="Ubah" onClick="@global-command('updateView')" />  -->
+      <button id="btn_info_wp_pbb" label="Info WP PBB-P2" onClick="@global-command('updateToInfoWpPbb')" />
+  </vbox>
+</zk>
