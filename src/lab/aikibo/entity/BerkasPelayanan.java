@@ -8,10 +8,10 @@ public class BerkasPelayanan {
 	private String nop;
 	private String thnPajak;
 	private String jnsPelayanan;
-	private String namaWpLama;
+	private String nmWpLama;
 	private String alamatWpLama;
 	private BigDecimal pbbLama;
-	private String namaWpBaru;
+	private String nmWpBaru;
 	private String alamatWpBaru;
 	private BigDecimal pbbBaru;
 	
@@ -48,11 +48,11 @@ public class BerkasPelayanan {
 	}
 
 	public String getNamaWpLama() {
-		return namaWpLama;
+		return nmWpLama;
 	}
 
 	public void setNamaWpLama(String namaWpLama) {
-		this.namaWpLama = namaWpLama;
+		this.nmWpLama = namaWpLama;
 	}
 
 	public String getAlamatWpLama() {
@@ -72,11 +72,11 @@ public class BerkasPelayanan {
 	}
 
 	public String getNamaWpBaru() {
-		return namaWpBaru;
+		return nmWpBaru;
 	}
 
 	public void setNamaWpBaru(String namaWpBaru) {
-		this.namaWpBaru = namaWpBaru;
+		this.nmWpBaru = namaWpBaru;
 	}
 
 	public String getAlamatWpBaru() {
